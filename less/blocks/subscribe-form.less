@@ -141,11 +141,13 @@
     line-height: 10px;
     &:nth-of-type(2)::before,
     &:nth-of-type(3)::before {
+      top: 13px;
       background: #cccccc;
     }
   }
   .subscribe-form__hint {
     color: #fb1f1f;
+    top: 18px;
     &:hover {
       color: rgba(0, 0, 0, 0.25);
     }
@@ -159,7 +161,6 @@
       left: 86%;
     }
   }
-
 }
 @media @desktop-widths {
   .price {
@@ -171,5 +172,8 @@
         margin-bottom: 0;
       }
     }
+    .subscribe-form__hint {
+      top: 20px;
   }
+}
 }

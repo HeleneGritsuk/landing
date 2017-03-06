@@ -9,10 +9,34 @@
 }
 .page-header h1 {
   margin-bottom: 66px;
+
+  span {
+    display: block;
+    background: linear-gradient(to bottom, #5e5e5e 0%, #888888 32%, #c0c0c0 63%, #eeeeee 80%, #9b9b9b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+  }
 }
 .page-header__registration-block {
   display: none;
 }
+.page-header__counter {
+  text-align: center;
+}
+
+.page-header__time {
+  display: block;
+  font-size: 50px;
+  letter-spacing: 9px;
+  font-family: "BebasNeue", "Arial", sans-serif;
+}
+.page-header__days {
+  color: #50b1c3;
+  word-spacing: 47px;
+  font-size: 10px;
+}
+
 @media @desktop-widths {
   .page-header {
     background: url("../img/bg-desktop.jpg") 50% 0% no-repeat;
