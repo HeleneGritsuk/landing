@@ -1,0 +1,41 @@
+.register__wrapper {
+  .container();
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.register {
+  background: url(../img/register.jpg) 50% 0% no-repeat;
+}
+.register__heading {
+  color: #fff;
+  margin-bottom: 105px;
+  .heading_decoration::after {
+    content: "05";
+  }
+
+}
+.register__btn {
+  padding: 10px 60px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+@media @desktop-widths {
+  .register {
+    background-image: url(../img/register-big-bg.jpg);
+    min-height: 750px;
+  }
+  .register__heading {
+    width: 49%;
+    margin-right: auto;
+    text-align: left;
+    margin-top: 373px;
+    margin-left: -4px;
+    line-height: 53px;
+    margin-bottom: 17px;
+  }
+  .register__btn {
+    left: 0;
+    transform: none;
+  }
+}

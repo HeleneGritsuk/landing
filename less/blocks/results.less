@@ -1,0 +1,208 @@
+.results__wrapper {
+  .container();
+  p {
+    height: 181px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+.results__heading .heading_decoration::after {
+  content: "06";
+}
+.results__video-container {
+  position: relative;
+  width: 300px;
+  height: auto;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+.results__graph {
+  border: 5px solid #fb1f1f;
+  width: 290px;
+  height: auto;
+  position: relative;
+  margin-bottom: 70px;
+  box-shadow: 0px 17px 17px 0px rgba(255, 255, 255,1),
+              0px 41px 42px -16px rgba(0, 0, 0, 0.40);
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 87px;
+    height: 2px;
+    background: #fb1f1f;
+    bottom: -53px;
+  }
+  img {
+    display: block;
+    position: relative;
+    z-index: -10;
+    top: -5px;
+    left: -5px;
+    width: 100%;
+    height: auto;
+  }
+
+}
+.results__zoom-btn {
+  position: absolute;
+  right:5%;
+  bottom: 5%;
+  border: none;
+  outline: none;
+  background: #fff;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.25);
+  &:hover {
+    opacity: 0.7;
+  }
+  img {
+    width: 23px;
+    height: 25px;
+    display: block;
+    position: absolute;;
+    z-index: 10;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.results__read-more-btn {
+  padding: 5px;
+  padding-left: 20px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  width: 164px;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.25);
+  color: #333333;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  &:hover {
+    opacity: 0.7;
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 17px;
+    height: 10px;
+    top: 12px;
+    background: url("../img/caret-down.png") 50% 50% no-repeat;
+  }
+}
+.results__reviews-toggle {
+  font-size: 0px;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 287px;
+  box-shadow: 0px 17px 23px -9px rgba(204, 0, 0, 0.55);
+  margin-bottom: 46px;
+}
+.results__reviews-author {
+  display: inline-block;
+  vertical-align: top;
+  background: linear-gradient( to right, #cc0000, #fb1f1f);
+  width: 177px;
+  padding: 6px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 18px;
+  margin-right: 1px;
+  span {
+    font-size: 14px;
+    color: #ccc;
+    font-weight: 400;
+    display: block;
+    text-transform: uppercase;
+  }
+}
+.results__reviews-toggle a {
+  vertical-align: top;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient( to right, #fb1f1f,  #cc0000);
+  margin-right: 1px;
+  position: relative;
+  &:hover::before,
+  &:hover::after {
+    background: #000;
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 9px;
+    top: 50%;
+    left: 38%;
+    background: #fff;
+    transform: rotate(45deg) translate(-50%,-50%);
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 9px;
+    top: 59%;
+    left: 50%;
+    background: #fff;
+    transform: rotate(-45deg) translate(-50%,-50%);
+  }
+}
+.results__reviews-toggle a:nth-of-type(2) {
+  background: linear-gradient( to right,#cc0000, #fb1f1f);
+  margin-right: 0px;
+  &::before {
+    top: 46%;
+    left: 50%;
+    transform: rotate(-45deg) translate(-50%,-50%);
+  }
+  &::after {
+    top: 61%;
+    left: 38%;
+    transform: rotate(45deg) translate(-50%,-50%);
+  }
+
+}
+@media @desktop-widths {
+  .results__heading {
+    color: #262626;
+    margin-top: 88px;
+  }
+  .results__slider-wrapper {
+    position: relative;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .results__slider-wrapper p {
+    width: 31.5%;
+  }
+  .results__video-container {
+    width: 50.6%;
+  }
+  .results__graph {
+    position: absolute;
+    right: 0;
+    width: 60.8%;
+    z-index: -5;
+    top: 134px;
+    right: 0;
+    img {
+      top: 0;
+      left: 0;
+    }
+  }
+}

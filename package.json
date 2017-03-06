@@ -1,0 +1,23 @@
+{
+  "name": "landing",
+  "version": "0.1.0",
+  "private": true,
+  "description": "landing Creacept",
+  "devDependencies": {
+    "autoprefixer": "6.5.3",
+    "browser-sync": "2.18.2",
+    "gulp": "3.9.1",
+    "gulp-if": "^2.0.2",
+    "gulp-less": "3.3.0",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.2.0",
+    "gulp-sourcemaps": "^2.4.1"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp serve"
+  },
+  "engines": {
+    "node": "6.7"
+  }
+}

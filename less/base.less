@@ -1,0 +1,114 @@
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  color: #262626;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "BebasNeue", "Arial", sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  color: #fff;
+}
+h2 {
+  font-family: "BebasNeue", "Arial", sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  color: #990000;
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+  font-weight: 300;
+  .heading_decoration {
+    position: relative;
+  }
+  .heading_decoration::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 40px;
+    background: #cccccc;
+    position: absolute;
+    transform: rotate(37deg);
+    left: 0px;
+    top: -14px;
+  }
+  .heading_decoration::after {
+    content: "01";
+    position: absolute;
+    display: block;
+    color: #cccccc;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 300;
+    top: -18px;
+    left: -23px;
+}
+  img {
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+h3 {
+  color: #333333;
+  font-size: 18px;
+  line-height: 25px;
+}
+.icon-lines {
+  fill: #cccccc;
+  fill-rule: evenodd;
+  display: block;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-120px);
+  bottom: 0px;
+}
+.visually-hidden {
+  .hidden();
+}
+.btn {
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background: linear-gradient( to right, #4ea3fc,  #00e1fa);
+  width: 220px;
+  padding: 15px 60px;
+  color: #fff;
+  box-shadow: 0px 17px 23px -9px rgba(62, 176, 252, 0.6);
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    box-shadow: inset 0 2px 5px 0 #0046b0,
+    0px 17px 23px -9px rgba(62, 176, 252, 0.6);
+  }
+}
+@font-face {
+  font-family:"BebasNeue";
+  src: url("../fonts/ofont.ru_Bebas Neue Cyrillic.ttf");
+}
+@font-face {
+  font-family:"Code200";
+  src: url("../fonts/CODE2000.TTF");
+}
+@media @desktop-widths {
+  body {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  h1 {
+    font-size: 70px;
+    line-height: 70px;
+  }
+  h2 {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

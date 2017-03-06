@@ -1,0 +1,48 @@
+.price__wrapper {
+  .container();
+  padding: 53px 17px;
+}
+
+.price {
+  background: url("../img/bg-registration.jpg") 50% 0% no-repeat;
+  color: #fff;
+}
+.price__info {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  span {
+    color: #50b1c3;
+  }
+  span:first-child {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &:last-of-type {
+    margin-bottom: 175px;
+  }
+}
+
+.price__heading::before {
+  display: none;
+}
+.price__heading {
+  color: #fff;
+  line-height: 45px;
+}
+.price__heading span{
+  color: #50b1c3;
+}
+@media @desktop-widths {
+  .price__wrapper {
+    display: flex;
+  }
+  .price {
+    background-image: url("../img/footer-bg.png");
+    padding-top: 149px;
+  }
+  .price__text-wrapper {
+    width: 24.5%;
+    margin-right: 16%;
+  }
+}

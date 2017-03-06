@@ -1,0 +1,39 @@
+.page-header {
+  background: url("../img/bg-mobile.jpg") 50% 0% no-repeat;
+  color: #fff;
+}
+.page-header__wrapper {
+  .container();
+  padding-top: 135px;
+  padding-bottom: 130px;
+}
+.page-header h1 {
+  margin-bottom: 66px;
+}
+.page-header__registration-block {
+  display: none;
+}
+@media @desktop-widths {
+  .page-header {
+    background: url("../img/bg-desktop.jpg") 50% 0% no-repeat;
+  }
+  .page-header__registration-block {
+    display: block;
+  }
+  .page-header__wrapper {
+    padding-top: 184px;
+    padding-bottom: 130px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .page-header__description-block {
+    width: 542px;
+  }
+  .page-header__registration-block {
+    width: 288px;
+  }
+  .page-header__counter-block p {
+    font-weight: 300;
+
+  }
+}

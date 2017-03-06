@@ -1,0 +1,138 @@
+.program__wrapper {
+  .container();
+}
+.program__program-text {
+  width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  background: url(../img/man-program.png) 0% 0% no-repeat;
+  margin-bottom: 30px;
+}
+.program__program-text:nth-of-type(n+2) {
+  display: none;
+}
+
+.program__heading {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.program__heading .heading_decoration::after {
+  content: "04";
+}
+.program__list {
+  list-style: none;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #fb1f1f;
+  width:238px;
+  padding: 15px;
+}
+.program__sort-down {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.program__list > li {
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #171715;
+  line-height: 20px;
+  position: relative;
+}
+.program__list > li:nth-child(2) img,
+.program__list > li:nth-child(3) img {
+  transform: rotate(180deg);
+}
+/*.program__list > li::before {
+  content: "";
+  display: block;
+
+  width: 10px;
+  height: 10px;
+}*/
+.program__sublist {
+  list-style: none;
+  padding: 0;
+  &--notshown {
+    display: none;
+  }
+}
+.program__sublist >li {
+  font-weight: 300;
+  color: #000;
+  font-size: 14px;
+  padding-left: 25px;
+  position: relative;
+
+}
+.program__sublist >li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.program__sublist >li:first-child::before {
+  background-image: url(../img/diamond-program.png);
+}
+.program__sublist >li:nth-child(2)::before {
+  background-image: url(../img/clubs-black.png);
+}
+.program__sublist >li:nth-child(3)::before {
+  background-image: url(../img/hearts-red.png);
+  background-size: 16px auto;
+}
+.program__sublist >li:nth-child(4)::before {
+  background-image: url(../img/spades-black.png);
+
+}
+@media @desktop-widths {
+  .program__list {
+    width: auto;
+  }
+  .program__program-text:nth-of-type(n+2) {
+    display: block;
+  }
+  .program__program-text-wrapper {
+    width: 80%;
+    max-width: 1285px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .program__program-text {
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 475px;
+    padding: 11px 32px;
+    width: 100%;
+    max-width: 31%;
+    box-sizing: border-box;
+
+    &:nth-child(1) {
+      background-image: url("../img/man-program1.png");
+      background-position: 0% 35px;
+    }
+    &:nth-child(2) {
+      background-image: url("../img/man-program2.png");
+      background-position: 100% 95%;
+    }
+    &:nth-child(3) {
+      background-image: url("../img/man-program3.png");
+      background-position: 100% 67%;
+    }
+    &:first-child .program__list>li:nth-child(n+2) {
+      display: none;
+    }
+  }
+}

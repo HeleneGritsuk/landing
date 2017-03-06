@@ -1,0 +1,152 @@
+.three-steps__wrapper {
+  .container();
+}
+.three-steps__heading .heading_decoration::after {
+  content: "02";
+}
+.three-steps__box {
+  margin: 0 auto;
+  width: 320px;
+  border: 10px solid red;
+  position: relative;
+  z-index: -100;
+  img {
+    position: absolute;
+    z-index: 1;
+    top: -114px;
+    left: -23px;
+  }
+  img:nth-of-type(2) {
+    display: none;
+  }
+}
+.three-steps__btn {
+  background: linear-gradient( to right, #fb1f1f, #cc0000);
+  width: 230px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 33px;
+  margin-bottom: 63px;
+  box-shadow: 0px 17px 23px -9px rgba(204, 0, 0, 0.55);
+  position: relative;
+  left: 50%;
+  transform :translate(-50%);
+  &:active {
+    box-shadow: inset 0 6px 5px 0 #9a0202,
+    0px 17px 23px -9px rgba(204, 0, 0, 0.55);
+  }
+}
+.three-steps__info-item {
+  position: relative;
+  z-index: 100;
+  background: #fff;
+  width: 230px;
+  border-radius: 30px;
+  margin-left: 42px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  box-shadow: 7px 7px 20px 0px rgba(0,0,0,0.25);
+  &:before {
+    content: "K";
+    display: block;
+    position: absolute;
+    font-family: "Code200", Arial, sans-serif;
+    font-size: 35px;
+    left: 20px;
+    top: 20px;
+  }
+  &:after {
+    content: "K";
+    display: block;
+    position: absolute;
+    font-family: "Code200", Arial, sans-serif;
+    font-size: 35px;
+    right: 20px;
+    bottom: 20px;
+    transform: rotate(180deg);
+  }
+  ul {
+    list-style: none;
+    padding: 57px 33px;
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    &::before {
+      content: "";
+      width: 28px;
+      height: 27px;
+      display: block;
+      position: absolute;
+      left: 20px;
+      top: 54px;
+      background-image: url(../img/hearts-red.png);
+    }
+    &::after {
+      content: "";
+      width: 28px;
+      height: 27px;
+      display: block;
+      position: absolute;
+      right: 20px;
+      bottom: 57px;
+      background-image: url(../img/hearts-red.png);
+      transform: rotate(180deg);
+    }
+    li {
+      display: block;
+      margin-bottom: 30px;
+    }
+  }
+}
+.three-steps__info-item:nth-of-type(n+2) {
+  display: none;
+}
+@media @desktop-widths {
+  .three-steps__box {
+    display: flex;
+    width: 61.4%;
+    margin-right: 16.6%;
+    padding-left: 13.4%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 26px;
+    img:first-of-type {
+      display: none;
+    }
+    img:nth-of-type(2) {
+      display: block;
+      top: -192px;
+      left: -8px;
+    }
+  }
+  .three-steps__info-item {
+    margin-left: 0;
+    min-height: 320px;
+    ul {
+      margin-top: 51px;
+    }
+    &:nth-of-type(1) li:nth-child(2n+1){
+      display: none;
+    }
+    &:nth-of-type(1)::before,
+    &:nth-of-type(1)::after {
+      content: "А";
+    }
+    &:nth-of-type(2)::before,
+    &:nth-of-type(2)::after {
+      content: "Q";
+    }
+    &:nth-of-type(3)::before,
+    &:nth-of-type(3)::after {
+      content: "K";
+    }
+  }
+  .three-steps__info-item:nth-of-type(n+2) {
+    display: block;
+  }
+  .three-steps__wrapper {
+    width: 100%;
+    max-width: 1600px;
+  }
+}
