@@ -29,6 +29,7 @@
 .price__heading {
   color: #fff;
   line-height: 45px;
+  margin-top: 0;
 }
 .price__heading span{
   color: #50b1c3;
@@ -40,9 +41,13 @@
   .price {
     //background-image: url("../img/footer-bg.png");
     padding-top: 149px;
+    .subscribe-form__input-wrapper:nth-of-type(2)::before, .subscribe-form__input-wrapper:nth-of-type(3)::before {
+    top: 16px;
+    }
+
   }
   .price__text-wrapper {
-    width: 24.5%;
+    width: 314px;
     margin-right: 16%;
   }
 }
