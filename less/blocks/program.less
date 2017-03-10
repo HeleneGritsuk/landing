@@ -114,9 +114,55 @@
 
 }
 @media @desktop-widths {
-  .program__list {
-    width: auto;
+  .program {
+    margin-bottom: 58px;
   }
+  .program__sort-down {
+    display: none;
+  }
+  .program__heading {
+    margin-bottom: 97px;
+  }
+  .program__list {
+    min-height: 385px;
+    padding-bottom: 52px;
+    padding-top: 10px;
+    width: auto;
+    padding-left: 28px;
+  }
+  .program__list-heading {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 25px;
+    line-height: 25px;
+    span {
+      display: block;
+      margin: 0 20px;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 71px;
+        height: 1px;
+        background: #990000;
+        bottom: -33px;
+        left: 46%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .program__sublist {
+    text-align: left;
+    margin-top: 71px;
+    li {
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 19px;
+    }
+}
   .program__program-text:nth-of-type(n+2) {
     display: block;
   }
@@ -131,11 +177,11 @@
     margin-left: 0;
     margin-right: 0;
     min-height: 475px;
-    padding: 11px 32px;
     width: 100%;
     max-width: 31%;
     box-sizing: border-box;
-
+    padding: 27px 34px;
+    padding-right: 25px;
     &:nth-child(1) {
       background-image: url("../img/man-program1.png");
       background-position: 0% 35px;

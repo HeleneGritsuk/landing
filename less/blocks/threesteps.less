@@ -131,14 +131,20 @@
   display: none;
 }
 @media @desktop-widths {
+  .three-steps {
+    margin-bottom: 32px;
+  }
   .three-steps__box {
+    width: 60.4%;
+    margin-right: 0;
+    margin-left: auto;
+    padding-left: 22.4%;
     display: flex;
-    width: 69.4%;
-    margin-right: 6.6%;
-    padding-left: 13.4%;
+    margin-right: 16%;
+    margin-left: auto;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-bottom: 26px;
+    padding-bottom: 9px;
     img:first-of-type {
       display: none;
     }
@@ -175,6 +181,12 @@
   }
   .three-steps__wrapper {
     width: 100%;
-    max-width: 1600px;
   }
+  .three-steps__heading {
+    margin-bottom: 94px;
+}
+.three-steps__info-item > ul > li:after {
+  content: none;
+}
+
 }

@@ -18,7 +18,7 @@
     <div class="page-header__wrapper">
       <div class="page-header__description-block">
         <h1><span>Обучение турнирному</span><span>покеру</span></h1>
-        <p>Запишись на курс «IRON MTT» и выигрывай в турнирах уже через 2 недели!</p>
+        <p>Запишись на курс «IRON MTT» и выигрывай в турнирах <br> уже через 2 недели!</p>
       </div>
       <div class="page-header__registration-block">
         <div class="page-header__counter-block">
@@ -53,9 +53,8 @@
     </div>
   </header>
   <section class="description">
-
+      <h2 class="description__heading"><span class="heading_decoration">Играй</span> как профессионал <svg class="icon-lines" width="239" height="7"><use xlink:href="#lines"/></svg><img src="img/clubs.png" width="21" height="25" alt=""></h2>
       <div class="description__wrapper">
-        <h2 class="description__heading"><span class="heading_decoration">Играй</span> как профессионал <svg class="icon-lines" width="239" height="7"><use xlink:href="#lines"/></svg><img src="img/clubs.png" width="21" height="25" alt=""></h2>
       <div class="description__text-wrapper">
         <h3>Мы научим тебя тащить турниры!</h3>
         <p>Стратегия работает во всех форматах турнира, на всех лимитах! Ты узнаешь как грамотно играть на всех стадиях турнира. Научишься анализировать
@@ -113,8 +112,9 @@
         </ul>
       </div>
     </div>
-      <button class="three-steps__btn btn" type="button" name="button">Записаться</button>
+
     </div>
+    <button class="three-steps__btn btn" type="button" name="button">Записаться</button>
   </section>
   <section class="protection">
     <div class="protection__wrapper">
@@ -129,7 +129,7 @@
     <div class="program__program-text-wrapper">
       <div class="program__program-text">
         <ul class="program__list">
-          <li>4 теоретических занятия <button class="program__sort-down"><img src="img/sort-down.png" alt=""></button>
+          <li class="program__list-heading"><span>4 теоретических занятия</span><button class="program__sort-down"><img src="img/sort-down.png" alt=""></button>
             <ul class="program__sublist">
               <li>Изучение стратегии пуш-фолда</li>
               <li>Базовые принципы работы сHoldem Manager 2</li>
@@ -155,7 +155,7 @@
       </div>
       <div class="program__program-text">
         <ul class="program__list">
-          <li>3 индивидуальные тренировки <button class="program__sort-down"><img src="img/sort-down.png" alt=""></button>
+          <li class="program__list-heading"><span>3 индивидуальные тренировки</span> <button class="program__sort-down"><img src="img/sort-down.png" alt=""></button>
             <ul class="program__sublist">
               <li>Совместная игра с тренером</li>
               <li>Разбор отыграных раздач с помощью Holdem Manager 2</li>
@@ -166,7 +166,7 @@
       </div>
       <div class="program__program-text">
         <ul class="program__list">
-          <li>4 практических занятия <button class="program__sort-down"><img src="img/sort-down.png" alt=""></button>
+          <li class="program__list-heading"><span>4 практических занятия </span><button class="program__sort-down"><img src="img/sort-down.png" alt=""></button>
             <ul class="program__sublist">
               <li>Разбор отыграных раздач с помощью Holdem Manager 2</li>
               <li>Показательная игра от тренера с подробными комментариями</li>
@@ -187,21 +187,32 @@
   <section class="results">
     <div class="results__wrapper">
       <h2 class="results__heading"><span class="heading_decoration">Результаты наших учеников</span><svg class="icon-lines" width="239" height="7"><use xlink:href="#lines"/></svg><img src="img/spades.png" width="24" height="25" alt=""></h2>
+
       <div class="results__slider-wrapper">
-        <div class="results__video-container">
-          <img src="img/pupils.jpg" alt="">
-          <button class="description__video-btn" type="button" name="button"><img src="img/play-btn.png" alt=""></button>
-        </div>
-        <div class="results__graph">
-          <img src="img/graph.jpg" alt="">
-          <button class="results__zoom-btn" type="button" name="button"><img src="img/zoom.png" alt=""></button>
-        </div>
-        <p>Раньше играл достаточно скромно, но потом понял, что нужно что-то менять и начал искать обучающие статьи, какие-то нотсы. Сразу же нашёл Академию Покера, и первое, что впечатлило, при просмотре видео, подача материала от тренеров, а также сама.
-        И уже с первых дней заметил результат, да, конечно, это не за один день всё делается, но появились заносы, поменялось мышление, а также перестал тильтовать.
-        Отдельно хотелось бы ещё отметить Леонида «DonLeon», как грамотного тренера. Он всегда доступно и свободно объясняет, разберёт руки, которые ему можно выслать, выявит и исправит все твои ошибки.
-        Обучение понравилось, сейчас записался на «Up The Game», а в дальнейшем планирую купить обучение «До результата»
-        </p>
-        <a class="results__read-more-btn" href="#">Читать полный</a>
+        <input type="radio" id="btn1">
+        <input type="radio" id="btn1">
+        <input type="radio" id="btn1">
+        <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+          <div class="results__slider-slide1">
+            <div class="results__video-container">
+              <img src="img/DSC_1313.png" alt="">
+              <button class="description__video-btn" type="button" name="button"><img src="img/play-btn.png" alt=""></button>
+            </div>
+            <div class="results__graph">
+              <img src="img/gr.jpg" alt="">
+              <button class="results__zoom-btn" type="button" name="button"><img src="img/zoom.png" alt=""></button>
+            </div>
+            <p>Раньше играл достаточно скромно, но потом понял, что нужно что-то менять и начал искать обучающие статьи, какие-то нотсы. Сразу же нашёл Академию Покера, и первое, что впечатлило, при просмотре видео, подача материала от тренеров, а также сама.
+            И уже с первых дней заметил результат, да, конечно, это не за один день всё делается, но появились заносы, поменялось мышление, а также перестал тильтовать.
+            Отдельно хотелось бы ещё отметить Леонида «DonLeon», как грамотного тренера. Он всегда доступно и свободно объясняет, разберёт руки, которые ему можно выслать, выявит и исправит все твои ошибки.
+            Обучение понравилось, сейчас записался на «Up The Game», а в дальнейшем планирую купить обучение «До результата»
+            </p>
+            <a class="results__read-more-btn" href="#">Читать полный</a>
+          </div>
         <div class="results__reviews-toggle">
           <div class="results__reviews-author">Аркадий <span>Отзыв</span></div>
           <a href="#"></a>

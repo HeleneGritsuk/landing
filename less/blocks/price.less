@@ -39,13 +39,27 @@
 }
 @media @desktop-widths {
   .price__wrapper {
+    padding-top: 182px;
+    margin-top: -86px;
     display: flex;
+    //background-color: #121212;
+    background-image: none;
+    background: url("../img/footer-bg.png") 50% 0% no-repeat;
+    width: 100%;
+    //max-width: 1285px;
+    margin-top: -86px;
+    padding-left: 19%;
+    padding-right: 20%
+
   }
   .price {
-    background-image: url("../img/footer-bg.png");
-    background-color: #000;
+
+    background-color: #0e0e0f;
+
+    background-image: none;
+    background-color: none;
     background-size: auto;
-    padding-top: 149px;
+    padding-top: 1px;
     .subscribe-form__input-wrapper:nth-of-type(2)::before, .subscribe-form__input-wrapper:nth-of-type(3)::before {
     top: 16px;
     }
@@ -54,5 +68,15 @@
   .price__text-wrapper {
     width: 314px;
     margin-right: 16%;
+  }
+  .price__heading {
+    margin-bottom: 70px;
+  }
+  .price__info:last-of-type {
+    margin-bottom: 0px;
+  }
+  .price__info {
+    text-align: left;
+    margin-bottom: 69px;
   }
 }

@@ -4,6 +4,7 @@
   color: #fff;
   p {
     line-height: 20px;
+
   }
 }
 
@@ -44,11 +45,14 @@
   color: #50b1c3;
   word-spacing: 47px;
   font-size: 10px;
+  text-transform: uppercase;
 }
 
 @media @desktop-widths {
   .page-header {
     background: #0a0407 url("../img/bg-desktop.jpg") 50% 0% no-repeat;
+    min-height: 918px;
+    margin-bottom: 98px;
   }
   .page-header__registration-block {
     display: block;
@@ -64,6 +68,9 @@
   }
   .page-header__description-block {
     width: 542px;
+    p {
+      max-width: 255px;
+    }
   }
   .page-header__registration-block {
     width: 288px;

@@ -115,8 +115,9 @@
 .price {
   .subscribe-form {
     margin-left: 20px;
-    margin-right: 20px;
+    //margin-right: 20px;
     margin-bottom: 111px;
+    margin-right: auto;
   }
   .subscribe-form__btn {
     margin-top: 11px;
@@ -178,11 +179,16 @@
 @media @desktop-widths {
   .price {
     .subscribe-form {
+      padding-top: 19px;
       width: 232px;
       h2 {
         font-size: 40px;
         line-height: 60px;
         margin-bottom: 0;
+        &::after {
+          left: 48%;
+          bottom: 14px;
+        }
       }
     }
     .subscribe-form__hint {
@@ -210,5 +216,15 @@
   left:0;
   transform: none;
 }
+
+.page-header {
+  .subscribe-form__input-wrapper:nth-of-type(2)::before, .subscribe-form__input-wrapper:nth-of-type(3)::before {
+    top: 14px;
+    }
+    .subscribe-form__hint {
+      top: 17px;
+    }
+  }
+
 
 }
