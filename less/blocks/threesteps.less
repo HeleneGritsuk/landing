@@ -2,6 +2,8 @@
   //.container();
 }
 .three-steps__heading {
+  line-height: 46px;
+  margin-bottom: 78px;
   .container();
 }
 .three-steps__heading .heading_decoration::after {
@@ -16,7 +18,7 @@
   img {
     position: absolute;
     z-index: 1;
-    top: -114px;
+    top: -107px;
     left: -23px;
   }
   img:nth-of-type(2) {
@@ -29,7 +31,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 33px;
-  margin-bottom: 63px;
+  margin-bottom: 73px;
   box-shadow: 0px 17px 23px -9px rgba(204, 0, 0, 0.55);
   position: relative;
   left: 50%;
@@ -48,8 +50,8 @@
   width: 230px;
   border-radius: 30px;
   //margin-left: 42px;
-  margin-top: 60px;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 54px;
   box-shadow: 7px 7px 20px 0px rgba(0,0,0,0.25);
   &:before {
     content: "K";
@@ -57,7 +59,7 @@
     position: absolute;
     font-family: "Code200", Arial, sans-serif;
     font-size: 35px;
-    left: 20px;
+    left: 10px;
     top: 20px;
   }
   &:after {
@@ -66,13 +68,13 @@
     position: absolute;
     font-family: "Code200", Arial, sans-serif;
     font-size: 35px;
-    right: 20px;
-    bottom: 20px;
+    right: 11px;
+    bottom: 16px;
     transform: rotate(180deg);
   }
   ul {
     list-style: none;
-    padding: 57px 33px;
+    padding: 65px 33px 32px 33px;
     margin: 0;
     text-align: center;
     font-size: 18px;
@@ -83,7 +85,7 @@
       height: 27px;
       display: block;
       position: absolute;
-      left: 20px;
+      left: 10px;
       top: 54px;
       background-image: url(../img/hearts-red.png);
     }
@@ -93,8 +95,8 @@
       height: 27px;
       display: block;
       position: absolute;
-      right: 20px;
-      bottom: 57px;
+      right: 11px;
+      bottom: 50px;
       background-image: url(../img/hearts-red.png);
       transform: rotate(180deg);
     }
@@ -102,6 +104,27 @@
       display: block;
       margin-bottom: 30px;
     }
+    span {
+      color: #cc0000;
+    }
+  }
+}
+.three-steps__info-item>ul>li {
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    width:1px;
+    height: 11px;
+    background: #fb1f1f;
+    position: absolute;
+    left: 50%;
+    bottom: -22px;
+  }
+}
+.three-steps__info-item>ul>li:last-child {
+  &:after {
+    display: none;
   }
 }
 .three-steps__info-item:nth-of-type(n+2) {
@@ -110,8 +133,8 @@
 @media @desktop-widths {
   .three-steps__box {
     display: flex;
-    width: 61.4%;
-    margin-right: 16.6%;
+    width: 69.4%;
+    margin-right: 6.6%;
     padding-left: 13.4%;
     flex-wrap: wrap;
     justify-content: space-around;

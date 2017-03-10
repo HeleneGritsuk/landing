@@ -1,15 +1,17 @@
 .register__wrapper {
   .container();
-  padding-top: 10px;
+  padding-top: 1px;
   padding-bottom: 20px;
 }
 .register {
-  background: url(../img/register-big-bg.jpg) 50% 0% no-repeat;
+  background: #121212 url(../img/register-big-bg.jpg) 50% 0% no-repeat;
   background-size: auto 365px;
 }
 .register__heading {
   color: #fff;
+  line-height: 47px;
   margin-bottom: 105px;
+  margin-bottom: 98px;
   .heading_decoration::after {
     content: "05";
   }
@@ -19,11 +21,13 @@
   padding: 10px 60px;
   position: relative;
   left: 50%;
+  margin-bottom: 10px;
   transform: translate(-50%);
 }
 @media @desktop-widths {
   .register {
     min-height: 750px;
+    background-size: auto;
   }
   .register__heading {
     width: 49%;

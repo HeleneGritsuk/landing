@@ -1,3 +1,6 @@
+.program {
+  margin-bottom: 41px;
+}
 .program__wrapper {
   .container();
 }
@@ -6,7 +9,10 @@
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
-  padding: 15px;
+  padding-top: 20px;
+  padding-left: 18px;
+  padding-right: 6px;
+  padding-bottom: 19px;
   box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.25);
   background: url(../img/man-program.png) 0% 0% no-repeat;
   margin-bottom: 30px;
@@ -16,18 +22,25 @@
 }
 
 .program__heading {
-  padding-left: 40px;
-  padding-right: 40px;
+  font-size: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 37px;
+  line-height: 44px;
+  margin-bottom: 60px;
 }
 .program__heading .heading_decoration::after {
   content: "04";
 }
 .program__list {
+  margin: 0;
   list-style: none;
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid #fb1f1f;
   width:238px;
-  padding: 15px;
+  padding: 18px;
+  padding-top: 30px;
+  padding-bottom: 44px;
 }
 .program__sort-down {
   background: none;
@@ -36,6 +49,7 @@
   cursor: pointer;
   position: absolute;
   right: 0;
+  top: 0;
   &:hover {
     opacity: 0.7;
   }
@@ -45,6 +59,7 @@
   color: #171715;
   line-height: 20px;
   position: relative;
+  margin-bottom: 11px;
 }
 .program__list > li:nth-child(2) img,
 .program__list > li:nth-child(3) img {
@@ -58,6 +73,7 @@
   height: 10px;
 }*/
 .program__sublist {
+  margin-top: 15px;
   list-style: none;
   padding: 0;
   &--notshown {
@@ -70,6 +86,7 @@
   font-size: 14px;
   padding-left: 25px;
   position: relative;
+  margin-bottom: 5px;
 
 }
 .program__sublist >li::before {

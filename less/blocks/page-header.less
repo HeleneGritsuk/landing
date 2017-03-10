@@ -1,11 +1,12 @@
 .page-header {
-  background: url("../img/bg-desktop.jpg") 0% 0% no-repeat;
+  background: #0a0407 url("../img/bg-desktop.jpg") 0% 0% no-repeat;
   background-size: auto 480px;
   color: #fff;
   p {
     line-height: 20px;
   }
 }
+
 .page-header__wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -25,7 +26,6 @@
       -webkit-text-fill-color: transparent;
       color: transparent;
   }
->>>>>>> 8862037fec4b023f4d18a3e13f0a8997ccfa6265
 }
 .page-header__registration-block {
   display: none;
@@ -48,13 +48,16 @@
 
 @media @desktop-widths {
   .page-header {
-    background: url("../img/bg-desktop.jpg") 50% 0% no-repeat;
+    background: #0a0407 url("../img/bg-desktop.jpg") 50% 0% no-repeat;
   }
   .page-header__registration-block {
     display: block;
   }
   .page-header__wrapper {
-    padding-top: 184px;
+    width: 80%;
+    max-width: 1285px;
+    margin: 0 auto;
+    padding-top: 138px;
     padding-bottom: 130px;
     display: flex;
     justify-content: space-between;
@@ -69,4 +72,11 @@
     font-weight: 300;
 
   }
+  .page-header__counter-block {
+    padding-top: 36px;
+  }
+  .page-header__counter {
+    padding-top: 23px;
+  }
+
 }

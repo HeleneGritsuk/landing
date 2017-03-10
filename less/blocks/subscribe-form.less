@@ -2,7 +2,7 @@
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   padding: 7px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   position: relative;
   &:nth-of-type(2)::before,
   &:nth-of-type(3)::before {
@@ -14,6 +14,9 @@
     background: #fff;
     right: 39px;
     top: 30px;
+  }
+  &:last-of-type {
+    margin-bottom: 85px;
   }
 }
 .subscribe-form__hint {
@@ -69,7 +72,8 @@
     height: 10px;
     background-color: #50b1c3;
     position: absolute;
-    left:50%;
+    left: 42%;
+    bottom: -3px;
   }
 }
 
@@ -112,6 +116,11 @@
   .subscribe-form {
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 111px;
+  }
+  .subscribe-form__btn {
+    margin-top: 11px;
+    padding: 10px 60px;
   }
 
   .subscribe-form__input-wrapper label {
@@ -137,6 +146,10 @@
     color: rgba(0, 0, 0, 1);
   }
   .subscribe-form__input-wrapper {
+    margin-bottom: 16px;
+    margin-left: auto;
+    width: 214px;
+    margin-right: auto;
     border: 1px solid #999999;
     line-height: 10px;
     &:nth-of-type(2)::before,
@@ -176,4 +189,26 @@
       top: 20px;
   }
 }
+.page-header .subscribe-form h2{
+  font-size: 40px;
+  line-height: 60px;
+  margin-top: 32px;
+  padding-bottom: 0;
+  margin-bottom: 12px;
+  text-align: left;
+  }
+.page-header .subscribe-form {
+  padding-left: 24px;
+}
+.subscribe-form__input-wrapper {
+  width: 212px;
+  line-height: 10px;
+  border-radius: 16px;
+}
+.page-header .subscribe-form__btn {
+  position: relative;
+  left:0;
+  transform: none;
+}
+
 }
